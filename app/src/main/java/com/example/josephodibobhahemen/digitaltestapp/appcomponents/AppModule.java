@@ -5,6 +5,8 @@ import android.content.Context;
 import com.example.josephodibobhahemen.digitaltestapp.MainActivity;
 import com.example.josephodibobhahemen.digitaltestapp.manager.EventBusManager;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ServiceManager;
+import com.example.josephodibobhahemen.digitaltestapp.uikit.DetailsFragmentUIKit;
+import com.example.josephodibobhahemen.digitaltestapp.uikit.ListFragmentUIKit;
 
 import javax.inject.Singleton;
 
@@ -37,5 +39,15 @@ public class AppModule {
     @Singleton
     public EventBusManager providesEventBusManager() {
         return new EventBusManager();
+    }
+
+    @Provides
+    public ListFragmentUIKit providesListFragmentUIKit() {
+        return new ListFragmentUIKit();
+    }
+
+    @Provides
+    public DetailsFragmentUIKit providesDetailsFragmentUIKit() {
+        return new DetailsFragmentUIKit();
     }
 }

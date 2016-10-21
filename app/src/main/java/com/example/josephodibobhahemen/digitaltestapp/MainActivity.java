@@ -5,12 +5,16 @@ import android.os.Bundle;
 
 import com.example.josephodibobhahemen.digitaltestapp.appcomponents.InjectedApplication;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ServiceManager;
+import com.example.josephodibobhahemen.digitaltestapp.uikit.ListFragmentUIKit;
 
 import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Inject ServiceManager serviceManager;
+    @Inject
+    ServiceManager serviceManager;
+    @Inject
+    ListFragmentUIKit mListFragmentUIKit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
