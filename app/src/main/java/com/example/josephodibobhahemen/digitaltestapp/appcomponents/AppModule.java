@@ -5,6 +5,7 @@ import android.content.Context;
 import com.example.josephodibobhahemen.digitaltestapp.MainActivity;
 import com.example.josephodibobhahemen.digitaltestapp.manager.EventBusManager;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ServiceManager;
+import com.example.josephodibobhahemen.digitaltestapp.service.TestService;
 import com.example.josephodibobhahemen.digitaltestapp.uikit.DetailsFragmentUIKit;
 import com.example.josephodibobhahemen.digitaltestapp.uikit.ListFragmentUIKit;
 
@@ -49,5 +50,11 @@ public class AppModule {
     @Provides
     public DetailsFragmentUIKit providesDetailsFragmentUIKit() {
         return new DetailsFragmentUIKit();
+    }
+
+    @Provides
+    @Singleton
+    public TestService providesTestService() {
+        return new TestService();
     }
 }

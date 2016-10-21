@@ -23,7 +23,6 @@ public class LoggingInterceptor implements Interceptor {
                 .header("Connection", "Keep-Alive")
                 .header("cache-Control", "no-cache")
                 .header("User-Agent", "Android-Version")
-                .method(orignal.method(), orignal.body())
                 .build();
 
         Log.d("LoggingInterceptor", String.format("Sending request %s on %s%n%s%s", request.url(), chain.connection(), request.headers(), request.body()));

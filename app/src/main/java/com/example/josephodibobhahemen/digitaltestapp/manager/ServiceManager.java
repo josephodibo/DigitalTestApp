@@ -6,8 +6,6 @@ import com.google.gson.GsonBuilder;
 
 import java.util.concurrent.TimeUnit;
 
-import javax.inject.Inject;
-
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -19,20 +17,31 @@ import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 
 public class ServiceManager {
 
-    private static final int TIMEOUT = 60;
+    public static final int TIMEOUT = 60;
+    private  static ServiceManager _instance;
     private OkHttpClient mOkHttpClient;
     private Retrofit.Builder mBuilder;
 
-    public static final String BaseURL = "https://api.github.com/"; // provide your endpoint
+    public static final String BaseURL = "http://ads.appia.com/"; // provide your endpoint
 
 
     /**
-     * Instantiates a new Service manager.
+     * Instantiates a new Service maneger.
      */
-
-    @Inject
     public ServiceManager() {
         initialize();
+    }
+
+    /**
+     * Gets instance.
+     *
+     * @return the instance
+     */
+    public static ServiceManager getInstance() {
+        if(_instance == null) {
+            _instance = new ServiceManager();
+        }
+        return _instance;
     }
 
 
@@ -61,7 +70,7 @@ public class ServiceManager {
      * Initialize retrofit builder.
      */
     void initializeRetrofitBuilder() {
-        mBuilder = new Retrofit.Builder();
+        mBuilder  = new Retrofit.Builder();
     }
 
 
@@ -73,12 +82,14 @@ public class ServiceManager {
      * @param customAdapter the custom adapter
      * @return the service instance
      */
-    public <S> S getServiceInstance(Class<S> type, ICustomTypeAdapterProvider customAdapter) {
-        mBuilder.baseUrl(BaseURL)
-                .client(mOkHttpClient)
+    public  static <S> S getServiceInstance(Class<S>  type, ICustomTypeAdapterProvider customAdapter) {
+
+        getInstance().mBuilder
+                .baseUrl(BaseURL)
+                .client(getInstance().mOkHttpClient)
                 .addConverterFactory(SimpleXmlConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(ServiceManager.initializeGson(customAdapter)));
-        return mBuilder.build().create(type);
+        return getInstance().mBuilder.build().create(type);
     }
 
 
@@ -96,7 +107,7 @@ public class ServiceManager {
                 .disableHtmlEscaping()
                 .serializeNulls();
 
-        if (adapterProvider != null) {
+        if(adapterProvider !=  null) {
             adapterProvider.registerTypeAdapter(gsonBuilder);
         }
 

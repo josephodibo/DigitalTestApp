@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="d9acdde07e22d86b23c0ab335de3e88bb516d99d">
+        sha1="7b6b21ca12d4321b68ae290a4cbb78bc83518c8f">
         <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_cc747e8be80212eb5ab3f5d30f720cb2dbe40f69/classes.dex" />
     </item>
     <item
@@ -165,6 +165,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/josephodibobhahemen/Development/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_08c456685e85caf9189fda6021c36d2bd2106a6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -174,12 +183,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/josephodibobhahemen/Development/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/dd91fb744c2ff921407475cb29a1e3fee397d411/simple-xml-2.7.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_08c456685e85caf9189fda6021c36d2bd2106a6c/classes.dex" />
+        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/simple-xml-2.7.1_acb46756b7e79ca534ad5f1e95cab80b5c47369f/classes.dex" />
     </item>
     <item
         is-multidex="true"
