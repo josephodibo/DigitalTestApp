@@ -1,24 +1,16 @@
 package com.example.josephodibobhahemen.digitaltestapp.service;
 
-import android.content.Context;
-import android.util.Log;
-
-import com.example.josephodibobhahemen.digitaltestapp.appcomponents.InjectedApplication;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ICustomTypeAdapterProvider;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ServiceManager;
 import com.google.gson.GsonBuilder;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-
-import javax.inject.Inject;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.http.GET;
-import retrofit2.http.Query;
 import retrofit2.http.QueryMap;
 
 /**
@@ -47,7 +39,6 @@ public class TestService {
         call.enqueue(new Callback<Reply>() {
             @Override
             public void onResponse(Call<Reply> call, Response<Reply> response) {
-                Log.d("Res","Ch");
 
             }
 
