@@ -1,14 +1,19 @@
 package com.example.josephodibobhahemen.digitaltestapp.manager;
 
+import com.example.josephodibobhahemen.digitaltestapp.service.TypeConverter;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import org.simpleframework.xml.Serializer;
+import org.simpleframework.xml.convert.AnnotationStrategy;
+import org.simpleframework.xml.core.Persister;
+import org.simpleframework.xml.strategy.Strategy;
 
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 
 /**
@@ -87,8 +92,7 @@ public class ServiceManager {
         getInstance().mBuilder
                 .baseUrl(BaseURL)
                 .client(getInstance().mOkHttpClient)
-                .addConverterFactory(SimpleXmlConverterFactory.create())
-                .addConverterFactory(GsonConverterFactory.create(ServiceManager.initializeGson(customAdapter)));
+                .addConverterFactory(new TypeConverter.TypedXmlConverter(SimpleXmlConverterFactory.create()));
         return getInstance().mBuilder.build().create(type);
     }
 
@@ -113,5 +117,6 @@ public class ServiceManager {
 
         return gsonBuilder.create();
     }
+
 
 }
