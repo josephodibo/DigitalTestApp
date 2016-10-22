@@ -52,6 +52,7 @@ public class ListFragmentUIKit extends Fragment {
         View view = inflater.inflate(R.layout.fragment_rcv_layout,container, false);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        mRecyclerView.addItemDecoration(new DeviderItemDecorator(getActivity()));
 
         return view;
     }

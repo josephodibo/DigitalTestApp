@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/list_item">
+    app:cardElevation="14dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/thumb_nail_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:elevation="20dp"
+        android:padding="8dp"
+        android:src="@color/cardview_dark_background" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valid"/>
+        android:layout_toEndOf="@id/thumb_nail_view"
+        android:layout_alignParentTop="true"
+        android:id="@+id/product_name"
+        android:paddingTop="8dp"
+        android:elevation="4dp"
+        android:text="Product Name"/>
 
-</RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:elevation="4dp"
+        android:rating="4.5"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/thumb_nail_view" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
