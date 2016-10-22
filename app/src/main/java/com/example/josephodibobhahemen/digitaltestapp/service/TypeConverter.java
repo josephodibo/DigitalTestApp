@@ -14,16 +14,26 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Created by josephodibobhahemen on 10/21/16.
  */
-
 public final class TypeConverter {
 
-        @Retention(RUNTIME)
+    /**
+     * The interface Xml.
+     */
+    @Retention(RUNTIME)
         @interface Xml {
         }
 
-   public static class TypedXmlConverter extends  Converter.Factory {
+    /**
+     * The type Typed xml converter.
+     */
+    public static class TypedXmlConverter extends  Converter.Factory {
         private final Converter.Factory xmlFactory;
 
+        /**
+         * Instantiates a new Typed xml converter.
+         *
+         * @param xmlFactory the xml factory
+         */
         public TypedXmlConverter(Converter.Factory xmlFactory) {
             this.xmlFactory = xmlFactory;
         }

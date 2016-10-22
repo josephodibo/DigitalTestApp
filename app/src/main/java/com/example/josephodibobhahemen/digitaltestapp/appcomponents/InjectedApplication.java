@@ -1,6 +1,7 @@
 package com.example.josephodibobhahemen.digitaltestapp.appcomponents;
 
 import android.app.Application;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 
 import dagger.ObjectGraph;

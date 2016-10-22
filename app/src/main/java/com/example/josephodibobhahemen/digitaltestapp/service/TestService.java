@@ -3,12 +3,15 @@ package com.example.josephodibobhahemen.digitaltestapp.service;
 import android.support.annotation.XmlRes;
 import android.util.Log;
 
+import com.example.josephodibobhahemen.digitaltestapp.manager.EventBusManager;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ICustomTypeAdapterProvider;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ServiceManager;
 import com.google.gson.GsonBuilder;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import javax.inject.Inject;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -31,15 +34,17 @@ public class TestService {
          * @param options the options
          * @return the ads
          */
-        @GET("getAds") @TypeConverter.Xml
+        @GET("getAds")
+        @TypeConverter.Xml
         Call<Reply> getAds(@QueryMap Map<String, String> options);
     }
 
-   private TestApi api;
+    private TestApi api;
 
     /**
      * Instantiates a new Test service.
      */
+    @Inject
     public TestService() {
         api = ServiceManager.getServiceInstance(TestApi.class, new ICustomTypeAdapterProvider() {
             @Override
@@ -52,12 +57,12 @@ public class TestService {
     /**
      * Gets ads.
      */
-    public void getAds() {
-        Call<Reply> call = api.getAds(map());
+    public void getAds(final EventBusManager bus) {
+        Call<Reply> call = api.getAds(queryMap());
         call.enqueue(new Callback<Reply>() {
             @Override
             public void onResponse(Call<Reply> call, Response<Reply> response) {
-                Log.d("TAG", "Service Reply");
+              bus.post(response.body());
 
             }
 
@@ -75,15 +80,15 @@ public class TestService {
      *
      * @return the map
      */
-    public Map<String, String>  map() {
-        Map<String, String> queryMap =  new LinkedHashMap<>();
-        queryMap.put("id","236");
-        queryMap.put("password","OVUJ1DJN");
-        queryMap.put("siteId","4288");
-        queryMap.put("deviceId","4230");
-        queryMap.put("sessionId","techtestsession");
-        queryMap.put("lname","odibobhahemen");
-        queryMap.put("totalCampaignsRequested",String.valueOf(10));
+    Map<String, String> queryMap() {
+        Map<String, String> queryMap = new LinkedHashMap<>();
+        queryMap.put("id", "236");
+        queryMap.put("password", "OVUJ1DJN");
+        queryMap.put("siteId", "4288");
+        queryMap.put("deviceId", "4230");
+        queryMap.put("sessionId", "techtestsession");
+        queryMap.put("lname", "odibobhahemen");
+        queryMap.put("totalCampaignsRequested", String.valueOf(10));
 
         return queryMap;
     }
