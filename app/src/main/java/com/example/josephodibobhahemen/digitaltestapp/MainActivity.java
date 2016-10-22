@@ -19,6 +19,5 @@ public class MainActivity extends AppCompatActivity {
         ((InjectedApplication) getApplication()).inject(this);
         setContentView(R.layout.activity_main);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,mListFragmentUIKit).commit();
-
     }
 }

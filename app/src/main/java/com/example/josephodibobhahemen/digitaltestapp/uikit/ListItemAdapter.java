@@ -24,6 +24,7 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemViewHolder> {
 
     public  void setData(List<AdsItem> adsItemList) {
         this.mAdsItemList = adsItemList;
+        notifyDataSetChanged();
 
     }
 
@@ -41,5 +42,10 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemViewHolder> {
     @Override
     public int getItemCount() {
         return mAdsItemList.size();
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return ListItemViewHolder.DATA_ROW;
     }
 }

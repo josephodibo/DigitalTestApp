@@ -5,30 +5,45 @@ import android.os.Looper;
 
 import org.greenrobot.eventbus.EventBus;
 
-import javax.inject.Inject;
-
 /**
  * Created by josephodibobhahemen on 10/21/16.
  */
 
 public class EventBusManager {
 
-    private static volatile EventBusManager instance;
-    private final Handler mainThread = new Handler(Looper.getMainLooper());
+    private static volatile  EventBusManager instance;
+    private final Handler mainThread  = new Handler(Looper.getMainLooper());
 
     private EventBus eventBus;
 
-    @Inject
     public EventBusManager() {
         initializeBus();
     }
 
+    /**
+     * Gets instance.
+     *
+     * @return the instance
+     */
+    public static EventBusManager getInstance() {
+        if(instance == null) {
+            synchronized (EventBusManager.class) {
+                if(instance == null) {
+                    instance = new EventBusManager();
+                }
+            }
+        }
+
+        return instance;
+    }
 
     /**
      * Initialize bus.
      */
     void initializeBus() {
-        eventBus = EventBus.getDefault();
+        if(eventBus == null) {
+            eventBus = EventBus.getDefault();
+        }
     }
 
 
@@ -67,8 +82,8 @@ public class EventBusManager {
      * @param event the event
      */
     public void post(final Object event) {
-        if (event == null) {
-            throw new NullPointerException("Event intended for posting is null");
+        if(event == null) {
+            throw  new NullPointerException("Event intended for posting is null");
         }
 
         if (Looper.myLooper() == Looper.getMainLooper()) {
@@ -82,5 +97,8 @@ public class EventBusManager {
             });
         }
     }
+
+
+
 
 }

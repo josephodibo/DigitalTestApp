@@ -24,10 +24,17 @@ import dagger.Provides;
 )
 public class AppModule {
 
-    private final Context mContext;
+    private final InjectedApplication injectedApplication;
 
-    public AppModule(Context context) {
-        this.mContext  = context;
+    public AppModule(InjectedApplication context) {
+        this.injectedApplication  = context;
+    }
+
+    @Provides
+    @Singleton
+    InjectedApplication providesInjectedApplication (){
+        return injectedApplication;
+
     }
 
     @Provides

@@ -88,7 +88,7 @@ public class TestService {
         queryMap.put("deviceId", "4230");
         queryMap.put("sessionId", "techtestsession");
         queryMap.put("lname", "odibobhahemen");
-        queryMap.put("totalCampaignsRequested", String.valueOf(10));
+        queryMap.put("totalCampaignsRequested", String.valueOf(20));
 
         return queryMap;
     }
