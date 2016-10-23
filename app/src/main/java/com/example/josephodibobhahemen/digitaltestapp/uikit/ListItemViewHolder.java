@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.example.josephodibobhahemen.digitaltestapp.R;
 import com.example.josephodibobhahemen.digitaltestapp.service.AdsItem;
-import com.google.common.annotations.VisibleForTesting;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -20,17 +19,12 @@ import com.squareup.picasso.Picasso;
 
 public class ListItemViewHolder extends RecyclerView.ViewHolder {
 
-    @VisibleForTesting
-    public static final int DATA_ROW = 0;
-
-
     public static ListItemViewHolder createViewHolder(Context context, ViewGroup viewGroup, int viewType) {
 
 
         int layoutId = -1;
-
         switch (viewType) {
-            case DATA_ROW:
+            case TAG.DATA_ROW:
                 layoutId = R.layout.list_item;
                 break;
         }

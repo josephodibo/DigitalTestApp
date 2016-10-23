@@ -57,21 +57,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d06b310c2f7f33dec5eae4c929c685d11fe8c6dd">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_cc747e8be80212eb5ab3f5d30f720cb2dbe40f69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
         <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_b74f99713350598f0fbc28e0fbb94d294b444cee/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ace955b78e35f6893d4984a09d2ee17dc577e0d0">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_cc747e8be80212eb5ab3f5d30f720cb2dbe40f69/classes.dex" />
     </item>
     <item
         is-multidex="true"

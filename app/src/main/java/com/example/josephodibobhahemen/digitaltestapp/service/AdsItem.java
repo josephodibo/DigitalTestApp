@@ -3,12 +3,14 @@ package com.example.josephodibobhahemen.digitaltestapp.service;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
+import java.io.Serializable;
+
 /**
  * Created by josephodibobhahemen on 10/22/16.
  */
 
 @Root(name = "ad", strict = false)
-public class AdsItem {
+public class AdsItem  implements Serializable{
     @Element(name = "appId")
     private String applicationId;
 

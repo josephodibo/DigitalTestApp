@@ -2,6 +2,7 @@ package com.example.josephodibobhahemen.digitaltestapp.appcomponents;
 
 import android.content.Context;
 
+import com.example.josephodibobhahemen.digitaltestapp.DetailsActivity;
 import com.example.josephodibobhahemen.digitaltestapp.MainActivity;
 import com.example.josephodibobhahemen.digitaltestapp.manager.EventBusManager;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ServiceManager;
@@ -20,7 +21,7 @@ import dagger.Provides;
 
 @Module(
         library = true,
-        injects = {MainActivity.class}
+        injects = {MainActivity.class, DetailsActivity.class}
 )
 public class AppModule {
 

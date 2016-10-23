@@ -47,7 +47,7 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemViewHolder> {
 
     @Override
     public int getItemViewType(int position) {
-        return ListItemViewHolder.DATA_ROW;
+        return TAG.DATA_ROW;
     }
 
     public void setOnClickListener(RecyclerViewListener.onItemClickListener listener) {

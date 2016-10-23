@@ -3,9 +3,13 @@ package com.example.josephodibobhahemen.digitaltestapp.uikit;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.josephodibobhahemen.digitaltestapp.R;
+import com.example.josephodibobhahemen.digitaltestapp.service.AdsItem;
 
 import javax.inject.Inject;
 
@@ -27,8 +31,12 @@ public class DetailsFragmentUIKit extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+        View view = inflater.inflate(R.layout.details_fragment_layout, container, false);
+        return view;
     }
 
+    public void setItem(AdsItem item) {
+        Log.d(TAG.LOG, "ITEM");
+    }
 
 }
