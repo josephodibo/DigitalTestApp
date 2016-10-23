@@ -3,6 +3,7 @@ package com.example.josephodibobhahemen.digitaltestapp.uikit;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -29,17 +30,17 @@ public class ListFragmentUIKit extends Fragment {
     @Inject
     DetailsFragmentUIKit mDetailsFragmentUIKit;
 
-    TestService service = new TestService();
-    EventBusManager busManager = EventBusManager.getInstance();
+    private TestService service = new TestService();
+    private EventBusManager busManager = EventBusManager.getInstance();
 
     private RecyclerView mRecyclerView;
     private ListItemAdapter adapter;
+    private SwipeRefreshLayout mSwipeRefreshLayout;
+
 
     @Inject
     public ListFragmentUIKit() {
     }
-
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,6 +54,7 @@ public class ListFragmentUIKit extends Fragment {
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRecyclerView.addItemDecoration(new DeviderItemDecorator(getActivity()));
+        mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_layout);
 
         return view;
     }
@@ -73,11 +75,28 @@ public class ListFragmentUIKit extends Fragment {
            }
        });
         mRecyclerView.setAdapter(adapter);
+        initSwipeRefresh();
+    }
+
+    void initSwipeRefresh(){
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                service.getAds(busManager);
+            }
+        });
+
+        mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_bright,
+                android.R.color.holo_green_light,
+                android.R.color.holo_orange_light,
+                android.R.color.holo_red_light);
+
     }
 
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEvent(Reply reply) {
+        mSwipeRefreshLayout.setRefreshing(false);
         adapter.setData(reply.getAdsItemList());
     }
 

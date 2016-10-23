@@ -53,9 +53,9 @@ public class ListItemViewHolder extends RecyclerView.ViewHolder {
         productName.setText(adsItem.getProductName());
 
         ImageView imageView = (ImageView) itemView.findViewById(R.id.thumb_nail_view);
-
         Picasso.with(itemView.getContext())
                 .load(adsItem.getProductThumbnail())
+                .placeholder(R.color.cardview_dark_background)
                 .into(imageView);
 
         itemView.setOnClickListener(new View.OnClickListener() {
