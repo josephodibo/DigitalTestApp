@@ -23,7 +23,6 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         getSupportFragmentManager().beginTransaction().replace(R.id.details_fragment_container,detailsFragmentUIKit).commit();
-
         detailsFragmentUIKit.setItem(null);
     }
 }

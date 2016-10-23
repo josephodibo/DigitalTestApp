@@ -1,15 +1,5 @@
 package com.example.josephodibobhahemen.digitaltestapp.manager;
 
-import com.example.josephodibobhahemen.digitaltestapp.service.TypeConverter;
-import com.google.gson.FieldNamingPolicy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import org.simpleframework.xml.Serializer;
-import org.simpleframework.xml.convert.AnnotationStrategy;
-import org.simpleframework.xml.core.Persister;
-import org.simpleframework.xml.strategy.Strategy;
-
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -27,7 +17,7 @@ public class ServiceManager {
     private OkHttpClient mOkHttpClient;
     private Retrofit.Builder mBuilder;
 
-    public static final String BaseURL = "http://ads.appia.com/"; // provide your endpoint
+    public static final String BaseURL = "http://ads.appia.com/";
 
 
     /**
@@ -69,8 +59,6 @@ public class ServiceManager {
                 .addNetworkInterceptor(new LoggingInterceptor())
                 .build();
     }
-
-
     /**
      * Initialize retrofit builder.
      */
@@ -84,38 +72,14 @@ public class ServiceManager {
      *
      * @param <S>           the type parameter
      * @param type          the type
-     * @param customAdapter the custom adapter
      * @return the service instance
      */
-    public  static <S> S getServiceInstance(Class<S>  type, ICustomTypeAdapterProvider customAdapter) {
-
+    public  static <S> S getServiceInstance(Class<S>  type) {
         getInstance().mBuilder
                 .baseUrl(BaseURL)
                 .client(getInstance().mOkHttpClient)
                 .addConverterFactory(new TypeConverter.TypedXmlConverter(SimpleXmlConverterFactory.create()));
         return getInstance().mBuilder.build().create(type);
-    }
-
-
-    /**
-     * Initialize  gson.
-     *
-     * @param adapterProvider the adapter provider
-     * @return the gson
-     */
-    static Gson initializeGson(ICustomTypeAdapterProvider adapterProvider) {
-
-        GsonBuilder gsonBuilder = new GsonBuilder()
-                .setFieldNamingPolicy(FieldNamingPolicy.IDENTITY)
-                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                .disableHtmlEscaping()
-                .serializeNulls();
-
-        if(adapterProvider !=  null) {
-            adapterProvider.registerTypeAdapter(gsonBuilder);
-        }
-
-        return gsonBuilder.create();
     }
 
 

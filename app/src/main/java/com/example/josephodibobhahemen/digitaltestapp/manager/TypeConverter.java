@@ -1,4 +1,4 @@
-package com.example.josephodibobhahemen.digitaltestapp.service;
+package com.example.josephodibobhahemen.digitaltestapp.manager;
 
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Retention;
@@ -20,7 +20,7 @@ public final class TypeConverter {
      * The interface Xml.
      */
     @Retention(RUNTIME)
-        @interface Xml {
+public @interface Xml {
         }
 
     /**

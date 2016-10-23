@@ -1,12 +1,10 @@
 package com.example.josephodibobhahemen.digitaltestapp.service;
 
-import android.support.annotation.XmlRes;
 import android.util.Log;
 
 import com.example.josephodibobhahemen.digitaltestapp.manager.EventBusManager;
-import com.example.josephodibobhahemen.digitaltestapp.manager.ICustomTypeAdapterProvider;
 import com.example.josephodibobhahemen.digitaltestapp.manager.ServiceManager;
-import com.google.gson.GsonBuilder;
+import com.example.josephodibobhahemen.digitaltestapp.manager.TypeConverter;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -46,12 +44,7 @@ public class TestService {
      */
     @Inject
     public TestService() {
-        api = ServiceManager.getServiceInstance(TestApi.class, new ICustomTypeAdapterProvider() {
-            @Override
-            public void registerTypeAdapter(GsonBuilder gsonBuilder) {
-
-            }
-        });
+        api = ServiceManager.getServiceInstance(TestApi.class);
     }
 
     /**
