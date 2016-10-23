@@ -3,7 +3,6 @@ package com.example.josephodibobhahemen.digitaltestapp.uikit;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -13,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.josephodibobhahemen.digitaltestapp.R;
 import com.example.josephodibobhahemen.digitaltestapp.manager.EventBusManager;
+import com.example.josephodibobhahemen.digitaltestapp.service.AdsItem;
 import com.example.josephodibobhahemen.digitaltestapp.service.Reply;
 import com.example.josephodibobhahemen.digitaltestapp.service.TestService;
 
@@ -66,6 +66,12 @@ public class ListFragmentUIKit extends Fragment {
     }
     void init() {
         adapter = new ListItemAdapter(getActivity());
+        adapter.setOnClickListener(new RecyclerViewListener.onItemClickListener() {
+           @Override
+           public void onItemClick(View view, Object object) {
+               AdsItem item = (AdsItem) object;
+           }
+       });
         mRecyclerView.setAdapter(adapter);
     }
 

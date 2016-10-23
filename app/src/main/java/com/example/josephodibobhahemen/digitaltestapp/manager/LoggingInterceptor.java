@@ -17,9 +17,9 @@ public class LoggingInterceptor implements Interceptor {
     @Override
     public Response intercept(Interceptor.Chain chain) throws IOException {
 
-        Request orignal = chain.request();
+        Request original = chain.request();
 
-        Request request = orignal.newBuilder()
+        Request request = original.newBuilder()
                 .header("Connection", "Keep-Alive")
                 .header("cache-Control", "no-cache")
                 .header("User-Agent", "Android-Version")

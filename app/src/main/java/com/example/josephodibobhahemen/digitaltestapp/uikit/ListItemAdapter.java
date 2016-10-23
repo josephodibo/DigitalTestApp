@@ -17,6 +17,7 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemViewHolder> {
 
     private Context mContext;
     private List<AdsItem> mAdsItemList = new ArrayList<>();
+    private RecyclerViewListener.onItemClickListener mOnClickListener;
 
     public ListItemAdapter(Context context) {
         this.mContext = context;
@@ -30,12 +31,12 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemViewHolder> {
 
     @Override
     public ListItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return ListItemViewHolder.creatViewHolder(mContext,parent,viewType);
+        return ListItemViewHolder.createViewHolder(mContext,parent,viewType);
     }
 
     @Override
     public void onBindViewHolder(ListItemViewHolder holder, int position) {
-        holder.internalBinding();
+        holder.internalBinding(mAdsItemList.get(position), mOnClickListener);
 
     }
 
@@ -47,5 +48,9 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemViewHolder> {
     @Override
     public int getItemViewType(int position) {
         return ListItemViewHolder.DATA_ROW;
+    }
+
+    public void setOnClickListener(RecyclerViewListener.onItemClickListener listener) {
+        this.mOnClickListener = listener;
     }
 }
