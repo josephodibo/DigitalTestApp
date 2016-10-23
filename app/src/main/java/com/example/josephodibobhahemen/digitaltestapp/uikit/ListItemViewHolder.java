@@ -5,12 +5,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.josephodibobhahemen.digitaltestapp.R;
 import com.example.josephodibobhahemen.digitaltestapp.service.AdsItem;
 import com.google.common.annotations.VisibleForTesting;
+import com.squareup.picasso.Picasso;
 
 /**
  * Created by josephodibobhahemen on 10/22/16.
@@ -21,7 +23,9 @@ public class ListItemViewHolder extends RecyclerView.ViewHolder {
     @VisibleForTesting
     public static final int DATA_ROW = 0;
 
+
     public static ListItemViewHolder createViewHolder(Context context, ViewGroup viewGroup, int viewType) {
+
 
         int layoutId = -1;
 
@@ -47,6 +51,12 @@ public class ListItemViewHolder extends RecyclerView.ViewHolder {
 
         TextView productName = (TextView) itemView.findViewById(R.id.product_name);
         productName.setText(adsItem.getProductName());
+
+        ImageView imageView = (ImageView) itemView.findViewById(R.id.thumb_nail_view);
+
+        Picasso.with(itemView.getContext())
+                .load(adsItem.getProductThumbnail())
+                .into(imageView);
 
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override

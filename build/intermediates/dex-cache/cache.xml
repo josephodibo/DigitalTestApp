@@ -12,12 +12,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-simplexml/2.1.0/a71c37fa341165df2c61ba93f549c4ceeb98d6c8/converter-simplexml-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a71c37fa341165df2c61ba93f549c4ceeb98d6c8">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-simplexml-2.1.0_617301b45189a459d3f5724c902c3376c89f1dad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_cbc88f1fc8c98d36f31499ae25bc1a70002628e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
         <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_25470c371cbb795cf865605718d39b6da5f65346/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_7c5fa1195aff94ebc5ca3210a2fe508140cb19df/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -48,12 +75,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_ec21cf329ea446339e94f7360733c107ff1354a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
         <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_3b77334520a829e3abd5c3565e18780c7b74c17e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/javax.inject-1_0448ac39e9afb6932a13130d238fc9442a2911b7/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,6 +120,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_cafc2d4a50251b6335608eaac089fc0692926cc2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar"
         jumboMode="true"
         optimize="true"
@@ -90,6 +144,15 @@
         revision="24.0.3"
         sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
         <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_3c2dd8345d0a8430626310c1b6c36caa8a481c08/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-3.0.0_2fb4fa1b7cf32de1e870db4841515f59db08c97f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,105 +174,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.3.0/4b290e394ea3109be5c0b7f08ff75de089125122/javawriter-2.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="4b290e394ea3109be5c0b7f08ff75de089125122">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/javawriter-2.3.0_6d40fff97fe46819ecddf541180ab13ed4be21b5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.2_4b6ef36dfa93df4aba8232c6a08a095b1513c46b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.dagger/dagger/1.2.1/78f96ef00fceee95802930944b1fc4e0e1f9aacc/dagger-1.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="78f96ef00fceee95802930944b1fc4e0e1f9aacc">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/dagger-1.2.1_898d9d17514a03f7909c75c46fe19557ad4dd282/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_639951b8ae7d88fdee5e35a097e1a654432c9e5c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-simplexml/2.1.0/a71c37fa341165df2c61ba93f549c4ceeb98d6c8/converter-simplexml-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a71c37fa341165df2c61ba93f549c4ceeb98d6c8">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-simplexml-2.1.0_617301b45189a459d3f5724c902c3376c89f1dad/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_cbc88f1fc8c98d36f31499ae25bc1a70002628e9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_7c5fa1195aff94ebc5ca3210a2fe508140cb19df/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_ec21cf329ea446339e94f7360733c107ff1354a1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/javax.inject-1_0448ac39e9afb6932a13130d238fc9442a2911b7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_cafc2d4a50251b6335608eaac089fc0692926cc2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
-        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-3.0.0_2fb4fa1b7cf32de1e870db4841515f59db08c97f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -228,12 +192,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_c7196f66007330797cfaaada1e722d993d6bca02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.3.0/4b290e394ea3109be5c0b7f08ff75de089125122/javawriter-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4b290e394ea3109be5c0b7f08ff75de089125122">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/javawriter-2.3.0_6d40fff97fe46819ecddf541180ab13ed4be21b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
         <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_7e3f3cea5c2deec69ece391ae1064edda2f52e71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.2_4b6ef36dfa93df4aba8232c6a08a095b1513c46b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -252,6 +243,15 @@
         revision="24.0.3"
         sha1="d5c731fc64c03dfe04d51134955b483551c35849">
         <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_9444774263b6dead989d7fbe59139d6168f0d8f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephodibobhahemen/.gradle/caches/modules-2/files-2.1/com.squareup.dagger/dagger/1.2.1/78f96ef00fceee95802930944b1fc4e0e1f9aacc/dagger-1.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="78f96ef00fceee95802930944b1fc4e0e1f9aacc">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/dagger-1.2.1_898d9d17514a03f7909c75c46fe19557ad4dd282/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -279,6 +279,15 @@
         revision="24.0.3"
         sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
         <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_22a9ee90cb1d6ee62b882f552de235c5093dadb5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/josephodibobhahemen/Development/Github/DigitalTestApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_639951b8ae7d88fdee5e35a097e1a654432c9e5c/classes.dex" />
     </item>
     <item
         is-multidex="true"

@@ -125,6 +125,7 @@
     <orderEntry type="library" exported="" name="okio-1.8.0" level="project" />
     <orderEntry type="library" exported="" name="gson-2.6.1" level="project" />
     <orderEntry type="library" exported="" name="support-fragment-24.2.1" level="project" />
+    <orderEntry type="library" exported="" name="picasso-2.5.2" level="project" />
     <orderEntry type="library" exported="" name="converter-simplexml-2.1.0" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-24.2.1" level="project" />
     <orderEntry type="library" exported="" name="support-media-compat-24.2.1" level="project" />
