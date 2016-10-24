@@ -2,6 +2,8 @@ package com.example.josephodibobhahemen.digitaltestapp.uikit;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -23,6 +25,8 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import javax.inject.Inject;
+
+import static android.os.Looper.getMainLooper;
 
 /**
  * Created by josephodibobhahemen on 10/21/16.
@@ -68,8 +72,13 @@ public class ListFragmentUIKit extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         init();
-        service.getAds(busManager);
-
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
+            @Override
+            public void run() {
+                mSwipeRefreshLayout.setRefreshing(true);
+                service.getAds(busManager);
+            }
+        });
     }
 
     /**
