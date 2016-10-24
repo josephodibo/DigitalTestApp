@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DigitalTestApp</string>
+    <string name="open_install_app">Open/Install Now</string>
+    <string name="details_page_title">Details</string>
 </resources>
