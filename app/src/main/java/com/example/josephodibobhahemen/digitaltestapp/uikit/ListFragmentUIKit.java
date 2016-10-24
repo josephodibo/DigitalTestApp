@@ -30,8 +30,6 @@ import javax.inject.Inject;
  */
 
 public class ListFragmentUIKit extends Fragment {
-    @Inject
-    DetailsFragmentUIKit mDetailsFragmentUIKit;
 
     private TestService service = new TestService();
     private EventBusManager busManager = EventBusManager.getInstance();
