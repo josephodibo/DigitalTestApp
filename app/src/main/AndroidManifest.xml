@@ -21,7 +21,7 @@
 
         <activity android:name=".DetailsActivity"
             android:parentActivityName=".MainActivity"
-            android:label="Details">
+            android:label="@string/details_page_title">
         </activity>
     </application>
 

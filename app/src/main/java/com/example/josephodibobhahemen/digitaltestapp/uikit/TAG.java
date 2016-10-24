@@ -13,9 +13,19 @@ import java.lang.annotation.RetentionPolicy;
 
 @StringDef({TAG.ITEM, TAG.LOG})
 @IntDef({TAG.DATA_ROW})
+
 @Retention(RetentionPolicy.SOURCE)
 public @interface TAG {
+    /**
+     * The constant ITEM.
+     */
     String ITEM = "ADS_ITEM";
+    /**
+     * The constant DATA_ROW.
+     */
     int DATA_ROW = 0;
+    /**
+     * The constant LOG.
+     */
     String LOG = "LOGGING";
 }
