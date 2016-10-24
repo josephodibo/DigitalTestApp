@@ -6,7 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 import com.example.josephodibobhahemen.digitaltestapp.R;
 import com.example.josephodibobhahemen.digitaltestapp.service.AdsItem;
@@ -20,7 +23,10 @@ import javax.inject.Inject;
 
 public class DetailsFragmentUIKit extends Fragment {
 
-    private ImageView imageView;
+    private ImageView mImageView;
+    private TextView mCategoryTxt, mRatingNumberTxt, mProductDesc;
+    private RatingBar mRatingBar;
+    private Button mButton;
 
     @Inject
     public DetailsFragmentUIKit() {
@@ -35,7 +41,12 @@ public class DetailsFragmentUIKit extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.details_fragment_layout, container, false);
-        imageView = (ImageView) view.findViewById(R.id.details_image_view);
+        mImageView = (ImageView) view.findViewById(R.id.details_image_view);
+        mCategoryTxt = (TextView) view.findViewById(R.id.category_value);
+        mRatingNumberTxt = (TextView) view.findViewById(R.id.rating_number_value);
+        mProductDesc =(TextView) view.findViewById(R.id.product_desc);
+        mRatingBar =(RatingBar) view.findViewById(R.id.ratingBar2);
+        mButton =(Button) view.findViewById(R.id.install_button);
         return view;
     }
 
@@ -52,10 +63,24 @@ public class DetailsFragmentUIKit extends Fragment {
      * @param item the item
      */
     void setItem(AdsItem item) {
+
         Picasso.with(getContext())
                 .load(item.getProductThumbnail())
                 .placeholder(R.color.cardview_dark_background)
-                .into(imageView);
+                .into(mImageView);
+
+        mRatingBar.setRating(item.getRating());
+        mRatingNumberTxt.setText(item.getNumberOfRatings());
+        mCategoryTxt.setText(item.getCategoryName());
+        mProductDesc.setText(item.getProductDescription());
+
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
     }
 
 
