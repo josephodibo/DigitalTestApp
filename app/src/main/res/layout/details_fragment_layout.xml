@@ -72,8 +72,6 @@
         android:id="@+id/product_desc_label"
         android:textStyle="normal|bold" />
 
-
-
     <Button
         android:text="@string/open_install_app"
         android:layout_width="match_parent"

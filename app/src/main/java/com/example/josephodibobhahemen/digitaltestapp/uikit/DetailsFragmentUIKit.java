@@ -1,5 +1,7 @@
 package com.example.josephodibobhahemen.digitaltestapp.uikit;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -62,7 +64,7 @@ public class DetailsFragmentUIKit extends Fragment {
      *
      * @param item the item
      */
-    void setItem(AdsItem item) {
+    void setItem(final AdsItem item) {
 
         Picasso.with(getContext())
                 .load(item.getProductThumbnail())
@@ -77,7 +79,7 @@ public class DetailsFragmentUIKit extends Fragment {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + item.getApplicationId())));
             }
         });
 

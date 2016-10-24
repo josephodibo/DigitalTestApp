@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">DigitalTestApp</string>
-    <string name="open_install_app">Open/Install Now</string>
+    <string name="open_install_app">Install Now</string>
     <string name="details_page_title">Details</string>
     <string name="category_label">Category</string>
     <string name="number_of_ratings">Number of Ratings</string>
